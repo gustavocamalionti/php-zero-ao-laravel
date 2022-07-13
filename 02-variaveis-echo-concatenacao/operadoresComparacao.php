@@ -8,18 +8,18 @@
 </head>
 <body>
     <?php
-    $a = 2;
-    $b = "2";
+        $a = 2;
+        $b = "2";
 
-    var_dump($a == $b);
-    var_dump($a === $b);
-    var_dump($a != $b);
-    var_dump($a !== $b);
-    var_dump($a < $b);
-    var_dump($a > $b);
-    var_dump($a <= $b);
-    var_dump($a >= $b);
-    var_dump($a <=> $b); /* se for menor, -1; se for igual:0, se for maior:1;*/ 
+        var_dump($a == $b);
+        var_dump($a === $b);
+        var_dump($a != $b);
+        var_dump($a !== $b);
+        var_dump($a < $b);
+        var_dump($a > $b);
+        var_dump($a <= $b);
+        var_dump($a >= $b);
+        var_dump($a <=> $b); /* se for menor, -1; se for igual:0, se for maior:1;*/ 
     ?>
 </body>
 </html>
