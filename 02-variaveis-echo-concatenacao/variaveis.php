@@ -9,9 +9,10 @@
 <body>
     <?php
         $gustavo = 17;
-        $giulia = "A Giulia tem 22 anos";
-        echo $gustavo; //echo é um tipo de saída de dados. echo = envia os comandos para o servidor e ele retorna para página web
-        echo $giulia;
+        $giulia = "A Giulia tem 22 anos"; 
+
+        //echo é um tipo de saída de dados. echo = envia os comandos para o servidor e ele retorna para página web
+        echo $giulia . " e o Gustavo tem " . $gustavo . " anos";
     ?>
 </body>
 </html>
