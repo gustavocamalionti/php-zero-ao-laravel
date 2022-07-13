@@ -10,7 +10,19 @@
     <?php
     $idade = array("Gustavo"=>"17", "Neri"=>"18", "Anderson"=>"19", "Giulia"=>"20");
 
-    echo "Anderson tem " . $idade['Anderson'] . " anos!";
+    echo "<h3>Anderson tem " . $idade['Anderson'] . " anos!</h3>";
+
+    foreach($idade as $name => $name_value) {
+        echo "Nome = " . $name . " | Idade = " . $name_value;
+        echo "<br>";
+
+         /*Parar o Loop quando chegar no Neri */
+         if ($name == "Neri") {
+            echo "O Neri está na lista!";
+            break;
+         }
+    }
+    
     ?>
 </body>
 </html>
