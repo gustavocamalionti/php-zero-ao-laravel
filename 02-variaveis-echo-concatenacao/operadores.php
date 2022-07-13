@@ -31,6 +31,9 @@
     $exponencial = $x ** $y;
     echo "<h3>Exponenciação entre " . $x . " e " . $y . " vale: " . $exponencial . "</h3>";
 
+    
+
+
     ?>
 </body>
 </html>
