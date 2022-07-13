@@ -9,28 +9,28 @@
 <body>
     <h1>Switch/Case</h1>
     <?php 
-    $nome = "João";
-    switch($nome) {
-        case "Gustavo":
-            echo "Você é o Gustavo";
-            break;
+        $nome = "João";
+        switch($nome) {
+            case "Gustavo":
+                echo "Você é o Gustavo";
+                break;
 
-        case "Neri":
-            echo "Você é o Neri";
-            break;
-           
-        case "Lisiane":
-            echo "Você é a Lisiane";
-            break;
+            case "Neri":
+                echo "Você é o Neri";
+                break;
+            
+            case "Lisiane":
+                echo "Você é a Lisiane";
+                break;
 
-        case "Rodrigo":
-        case "Rogério":
-            echo "Você é o Rodrigo ou Rogério";
-            break;
-        
-        default:
-            echo "Você não é o Gustavo, nem a Lisiane, Rodrigo, Rogério e nem o Neri";
-    }
+            case "Rodrigo":
+            case "Rogério":
+                echo "Você é o Rodrigo ou Rogério";
+                break;
+            
+            default:
+                echo "Você não é o Gustavo, nem a Lisiane, Rodrigo, Rogério e nem o Neri";
+        }
     
     ?>
 </body>
