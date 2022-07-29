@@ -13,23 +13,57 @@
   --light-grey: #C7B9AB;
   --grey: #C4C4C4;
   --medium-grey: #262626;
-  --black: #000000;
-  --cyan: #1DC0D6;
-  --yellow: #eeec90;
+  --black: rgba(0,0,0,0.9);
+  --cyan: #00cfb3;
+  --yellow: #dad600;
+  --blue: dodgerblue;
+  --light-blue: deepskyblue;
 }
 
 body {
-
-    background: linear-gradient(45deg, var(--cyan), var(--white));
+    background: linear-gradient(45deg, var(--cyan), var(--yellow));
     height:100vh;
+    width:100vw;
+    display:flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .container {
-    position:absolute;
-    display:inline-block;
-    border: 4px solid var(--medium-grey);
+    display:flex;
+    flex-direction:column;
+    border-radius:15px;
+    width:100vw;
+    max-width:350px;
+    margin: 0 15px;
+    background-color: var(--black);
+
+    color: var(--white);
+    padding:45px;
+}
+
+input {
+    padding:15px;
+    border:none;
     border-radius:5px;
-    left:50%;
-    top:50%;
-    max-width:400px;
+    margin:5px;
+    font-size:15px;
+    width:100%;
+}
+
+.container__button {
+    background: var(--blue);
+    padding:10px;
+    text-transform:uppercase;
+    min-width:150px;
+    border-radius:15px;
+    align-self:center;
+    margin-top:15px;
+    font-size:15px;
+    color:var(--white);
+}
+
+.container__button:hover {
+    background-color:var(--light-blue);
+    cursor:pointer;
 }
