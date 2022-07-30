@@ -87,5 +87,18 @@ legend{
     outline:none;
 }
 
+#submit {
+    background: linear-gradient(to right, rgb(0,92,197), rgb(90,20,220));
+    width: 100%;
+    border-radius: 10px;
+    height: 35px;
+    color: var(--white);
+    cursor:pointer;
+}
+
+#submit:hover {
+    background: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+}
+
 
 
