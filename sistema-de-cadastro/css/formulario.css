@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+  --white: #FFF;
+  --whitesmoke: #F9F9F9;
+  --light-grey: #C7B9AB;
+  --grey: #C4C4C4;
+  --medium-grey: #262626;
+  --black: rgba(0,0,0,0.9);
+  --cyan: #00cfb3;
+  --yellow: #dad600;
+  --blue: dodgerblue;
+  --light-blue: deepskyblue;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 162, 255),rgb(7, 7, 97));
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.containner {
+    background-color: var(--black);
+    border-radius: 15px;
+    width:20%;
+    padding:15px;
+    color:var(--white);
+    font-size:15px;
+}
+
+fieldset {
+    border: 5px solid var(--blue);
+}
+
+
+legend{
+    border: 1px solid var(--blue);
+    padding:10px;
+    text-align:center;
+    background-color: var(--blue);
+    border-radius:8px;
+}
+
+.containner__inputBox {
+    margin:25px 10px;
+    position:relative;
+}
+
+.containner__inputUser {
+    background:none;
+    border:none;
+    border-bottom: 1px solid var(--white);
+    outline:none;
+    width:100%;
+    letter-spacing:2px;
+    color: var(--white);
+}
+
+.containner__labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.containner__inputUser:focus ~ .containner__labelInput, 
+.containner__inputUser:valid ~ .containner__labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: var(--blue);
+}
+
+#data_nascimento {
+    border:none;
+    padding:8px;
+    border-radius:10px;
+    outline:none;
+}
+
+
+

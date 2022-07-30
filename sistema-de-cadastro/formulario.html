@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Formulário | GN</title>
+
+
+</head>
+<body>
+    <form class="containner">
+        <fieldset>
+            <legend><b>Formulário de Clientes</b></legend>
+            <br>
+            <div class="containner__inputBox">
+                <input type="text" name="nome" id="nome" class="containner__inputUser" required>
+                <label for="nome" class="containner__labelInput">Nome Completo</label>
+            </div>
+
+            <div class="containner__inputBox">
+                <input type="text" name="email" id="email" class="containner__inputUser" required>
+                <label for="email" class="containner__labelInput">Email</label>
+            </div>
+
+            <div class="containner__inputBox">
+                <input type="tel" name="telefone" id="telefone" class="containner__inputUser" required>
+                <label for="telefone" class="containner__labelInput">Telefone</label>
+            </div>
+
+            <p>Sexo:</p>
+            <br>
+            <input type="radio" name="genero" value="feminino"  id="feminino" required>
+            <label for="feminino">Feminino</label>
+            <br>
+            <input type="radio" name="genero" value="masculino" id="masculino" required>
+            <label for="masculino">Masculino</label>
+            <br>
+            <input type="radio" name="genero" value="outro" id="outro" required>
+            <label for="outro">Outro</label>
+
+            <div class="containner__inputBox">
+                <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento">
+            </div>
+
+            <div class="containner__inputBox">
+                <input type="text" name="cidade" id="cidade" class="containner__inputUser" required>
+                <label for="cidade" class="containner__labelInput">Cidade</label>
+            </div>
+
+            <div class="containner__inputBox">
+                <input type="text" name="estado" id="estado" class="containner__inputUser" required>
+                <label for="estado" class="containner__labelInput">Estado</label>
+            </div>
+
+            <div class="containner__inputBox">
+                <input type="text" name="endereco" id="endereco" class="containner__inputUser" required>
+                <label for="endereco" class="containner__labelInput">Endereço</label>
+            </div>
+
+            <input type="submit" name="submit" id="submit">
+            
+        </fieldset>
+    </form>
+</body>
+</html>
