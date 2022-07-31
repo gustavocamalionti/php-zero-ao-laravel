@@ -20,6 +20,7 @@
         include_once('config.php');
 
         $nome = $_POST['nome'];
+        $senha = $_POST['senha'];
         $email = $_POST['email']; 
         $telefone = $_POST['telefone'];
         $sexo = $_POST['genero'];
@@ -28,8 +29,8 @@
         $estado = $_POST['estado'];
         $endereco = $_POST['endereco'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
-                  VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco');");           
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,senha,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
+                  VALUES ('$nome', '$senha', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco');");           
     }
 
 ?>
@@ -46,6 +47,7 @@
 
 </head>
 <body>
+<a href="home.php">Voltar</a>
     <form action = "formulario.php" method="POST" class="containner">
         <fieldset>
             <legend><b>Formulário de Clientes</b></legend>
@@ -53,6 +55,11 @@
             <div class="containner__inputBox">
                 <input type="text" name="nome" id="nome" class="containner__inputUser" required>
                 <label for="nome" class="containner__labelInput">Nome Completo</label>
+            </div>
+
+            <div class="containner__inputBox">
+                <input type="password" name="senha" id="senha" class="containner__inputUser" required>
+                <label for="senha" class="containner__labelInput">Senha</label>
             </div>
 
             <div class="containner__inputBox">
