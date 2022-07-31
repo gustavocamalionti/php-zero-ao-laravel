@@ -1,3 +1,39 @@
+<?php
+    //para comentar, selecione o bloco e pressione CTRL + K + C
+    if(isset($_POST['submit'])) {
+        // print_r('Nome: ' . $_POST['nome']);
+        // print_r('<br>');
+        // print_r('Email: ' . $_POST['email']);
+        // print_r('<br>');
+        // print_r('Telefone: ' . $_POST['telefone']);
+        // print_r('<br>');
+        // print_r('Sexo: ' . $_POST['genero']);
+        // print_r('<br>');
+        // print_r('Data: ' . $_POST['data_nascimento']);
+        // print_r('<br>');
+        // print_r('Cidade: ' . $_POST['cidade']);
+        // print_r('<br>');
+        // print_r('Estado: ' . $_POST['estado']);
+        // print_r('<br>');
+        // print_r('Endereço: ' . $_POST['endereco']);
+
+        include_once('config.php');
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email']; 
+        $telefone = $_POST['telefone'];
+        $sexo = $_POST['genero'];
+        $data_nasc = $_POST['data_nascimento'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+        $endereco = $_POST['endereco'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone,sexo,data_nasc,cidade,estado,endereco) 
+                  VALUES ('$nome', '$email', '$telefone', '$sexo', '$data_nasc', '$cidade', '$estado', '$endereco');");           
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +46,7 @@
 
 </head>
 <body>
-    <form class="containner">
+    <form action = "formulario.php" method="POST" class="containner">
         <fieldset>
             <legend><b>Formulário de Clientes</b></legend>
             <br>
