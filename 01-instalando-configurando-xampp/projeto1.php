@@ -10,5 +10,6 @@
     <h1>Gustavo Camalionti #2</h1>
     <p>Para "compilar", devemos startar o xampp e acessar o seguinte link pelo navegador:</p>
     <li>http://localhost/projects/php-zero-ao-laravel/01-instalando-configurando-xampp/projeto1.php</li>
+    <li>http://localhost/projects/php-zero-ao-laravel/sistema-de-cadastro/home.php</li>
 </body>
 </html>
