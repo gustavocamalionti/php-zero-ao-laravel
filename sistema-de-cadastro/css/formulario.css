@@ -26,6 +26,7 @@ body {
     align-items:center;
     justify-content: center;
     height: 100vh;
+   
 }
 
 .containner {
@@ -35,6 +36,7 @@ body {
     padding:15px;
     color:var(--white);
     font-size:15px;
+    width:50vw;
 }
 
 fieldset {
@@ -99,6 +101,4 @@ legend{
 #submit:hover {
     background: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
 }
-
-
 
